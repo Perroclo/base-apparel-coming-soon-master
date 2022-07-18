@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root{
+--Desaturated-Red: hsl(0, 36%, 70%);
+--Soft-Red: hsl(0, 93%, 68%);
+--Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+}
+
+
+*{
+
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;;
+
+}
+
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%) );
+    max-height: 100vh;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 88px 256px auto;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    
+}
+
+.encabezado1{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    
+
+}
+
+.imagen2{
+width: 375px;
+
+}
+
+.imagen1{
+width: 27%;
+
+}
+
+.coming{
+
+font-size: 42px;
+text-align: center;
+letter-spacing: 10px;
+font-weight: 200;
+color: var(--Desaturated-Red);
+
+
+
+}
+
+.soon{
+
+font-size: 48px;
+text-align: center;
+letter-spacing: 9px;
+animation: heartBeat;
+animation-duration: 2s;
+
+}
+
+.zonaTextos{
+
+    margin-top: 66px;
+    
+    
+}
+
+.textual{
+
+margin-top: 20px;
+padding: 0px 22px 0px 22px;
+text-align: center;
+line-height: 23px;
+font-size: 15px;
+color: var(--Desaturated-Red);
+
+
+}
+
+
+
+.email{
+
+
+height: 100%;
+border-radius: 30px;
+width: 100%;
+border-width: 1px;
+border: 1px solid hsl(0, 36%, 70%);
+padding: 0px 0px 0px 28px;
+
+}
+
+::placeholder{
+
+text-align: left;
+
+}
+
+.formulario{
+width: 100%;
+padding: 0px 22px 0px 22px;
+height: 50px;
+margin-top: 30px;
+position: relative;
+}
+
+.submit{
+
+    width: 67px;
+    border-radius: 41px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border: 1px solid hsl(0, 36%, 70%);
+    background-color:  var(--Soft-Red);
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.imagenError{
+
+    right: 97px;
+    bottom: 13px;
+    position: absolute;
+    display: none;
+    
+}
+
+.submit:hover{
+
+background-color: red;
+
+
+}
+
+.warnings{
+
+color: red;
+text-align: center;
+margin-top: 34px;
+
+}
+
+.imagen3{
+    display: none;
+}
+
+@media only screen and (min-width:1100px){
+
+
+.container{
+
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 115px auto;
+    width: 100%
+
+}
+
+.imagen3{
+
+    display: block;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.imagen2{
+
+    display: none;
+    
+}
+
+
+.encabezado2{
+
+grid-row-start: 1;
+grid-row-end: 3; 
+
+grid-column-start: 2;
+grid-column-end: 3;
+}
+
+.zonaTextos{
+
+margin-top: 0px;
+padding: 10px 190px 10px 190px;
+align-items: center;
+
+}
+
+.coming, .soon{
+
+text-align: left;
+font-size: 67px;
+}
+
+.textual{
+text-align: left;
+padding: 0px 0px 0px 0px;
+
+
+}
+
+.zonaInput{
+
+padding-left: 0px;
+
+}
+
+.encabezado1{
+
+padding-top: 0px;
+padding-left: 190px;
+
+}
+
+.imagen1{
+
+    margin-top: 30px;
+}
+
+.submit{
+
+right: 0;
+height: 100%;
+}
+
+.formulario{
+
+padding: 0px;
+}
+
+
+
+
+}
